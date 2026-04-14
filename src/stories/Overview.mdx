@@ -1,0 +1,55 @@
+import { Meta, Canvas } from '@storybook/blocks'
+import * as ButtonStories from '../components/ui/button/Button.stories'
+import * as CheckboxStories from '../components/ui/checkbox/Checkbox.stories'
+import * as LabelStories from '../components/ui/label/Label.stories'
+import * as InputOTPStories from '../components/ui/input-otp/InputOTP.stories'
+import * as DialogStories from '../components/ui/dialog/Dialog.stories'
+
+<Meta title="Overview" />
+
+# Component Library
+
+A collection of accessible, reusable UI components built with [shadcn-vue](https://www.shadcn-vue.com/) and [Reka UI](https://reka-ui.com/).
+
+---
+
+## Button
+
+A versatile button component supporting multiple variants and sizes.
+
+<Canvas of={ButtonStories.AllVariants} />
+
+---
+
+## Checkbox
+
+A control that allows the user to toggle between checked and not checked.
+
+<Canvas of={CheckboxStories.Default} />
+<Canvas of={CheckboxStories.Checked} />
+<Canvas of={CheckboxStories.Disabled} />
+
+---
+
+## Label
+
+Renders an accessible label associated with a form control.
+
+<Canvas of={LabelStories.Default} />
+
+---
+
+## Input OTP
+
+An accessible one-time password input component.
+
+<Canvas of={InputOTPStories.Default} />
+
+---
+
+## Dialog
+
+A modal dialog component for confirmations, forms, and alerts.
+
+<Canvas of={DialogStories.Default} />
+<Canvas of={DialogStories.Destructive} />
